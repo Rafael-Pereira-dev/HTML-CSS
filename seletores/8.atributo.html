@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor por atributo</title>
+    <style>
+        p[id="paragrafo-id"] {
+            color: green;
+            font-size: 26px;
+        }
+      
+        a[href] {
+            background-color: pink;
+        }
+
+        /*Seleciona os que iniciam com www*/
+        a[href^=www] {
+            color: red;
+        }
+
+        /*Seleciona os que terminam em com*/
+        a[href$=com] {
+            font-size: 26px;
+        }
+
+        /*Seleciona os que contém youtube*/
+        a[href*=youtube] {
+            font-style: italic;
+        }
+
+        input[type=text] {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor por atributo</h1>
+    <hr/>
+    <p id="paragrafo-id"> Parágrafo com id</p>
+    <p class="paragrafo-id">Parágrafo com classe</p>
+
+    <hr/>
+    <a href="www.google.com.br">Link para google com <b>www</b></a><br>
+    <a href="google.com">Link para google sem <b>www</b></a><br>
+    <a href="www.youtube.com">Link que contém <b>youtube</b></a>
+
+    <hr/>
+    <input type="text" name="text" placeholder="Texto"/>
+    <input type="password" placeholder="Senha"/>
+</body>
+</html>

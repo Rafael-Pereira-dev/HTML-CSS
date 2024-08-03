@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor por nth-child & not</title>
+    <style>
+        p:not(:first-child) {
+            color: red;
+        }
+
+        p:not(#meio) {
+            font-size: 26px;
+        }
+
+        p:nth-child(odd) {
+            background-color: blue;
+        }
+
+        p:nth-child(4) {
+            font-style: italic;
+        }
+
+        p:nth-child(3n) {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletor por nth-child & not</h1>
+    <hr/>
+    <div>
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p id="meio">Parágrafo 3</p>
+        <p>Parágrafo 4</p>
+        <p>Parágrafo 5</p>
+        <p>Parágrafo 6</p>
+    </div>
+</body>
+</html>

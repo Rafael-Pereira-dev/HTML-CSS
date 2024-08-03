@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de filho</title>
+    <style>
+        #div-1 > p {
+            color: red;
+        }
+
+        #div-2 > p {
+            color: orange;
+            font-size: 26px;
+        }
+
+        #div-1 > div {
+            background-color: black;
+        }
+
+        #div-1 > #div-2 {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Seletor de filho (>)</h1>
+    <hr/>
+    <div id="div-1">
+        <p>Parágrafos irmãos 1</p>
+        <p>Parágrafos irmãos 2</p>
+        <p>Parágrafos irmãos 3</p>
+        <p>Parágrafos irmãos 4</p>
+        <p>Parágrafos irmãos 5</p>
+        <div id="div-2"> FORA DO PARÁGRAFO
+            <p>Outros parágrafos 1</p>
+            <p>Outros parágrafos 2</p>
+            <p>Outros parágrafos 3</p>
+        </div>
+    </div>
+</body>
+</html>

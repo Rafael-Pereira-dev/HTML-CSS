@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor por pseudo-elemento</title>
+    <style>
+        #paragrafo::first-line {
+            color: red;
+        }
+
+        p::first-letter {
+            font-size: 26px;
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Seletor por pseudo-elemento</h1>
+    <hr/>
+    <div>
+        <p id="paragrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatem excepturi inventore nisi voluptatibus fuga 
+            iusto itaque molestiae impedit, aliquam recusandae delectus, 
+            facilis dolorum quia eligendi non nihil quo esse modi.
+        </p>
+    </div>
+</body>
+</html>
